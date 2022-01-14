@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Felecort</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        function titleChanger() {
+            var length = document.title.length;
+            title = document.title;
+            document.title = title.substring(length-1, length) +
+                             title.substring(0, length-1);
+        }
+        var intervalFunc = setInterval(titleChanger, 500);
+    </script>
+</body>
+</html>
